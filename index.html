@@ -6,10 +6,10 @@
 	<meta charset="utf-8">
 	<title>林一峰的简历</title>
 	<link href="avatar.ico" rel="icon">
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="mysite.css">	
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./mysite.css">	
+	<link rel="stylesheet" type="text/css" href="./jquery.pagepiling.css" />
+	<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
     $('#pagepiling').pagepiling({
@@ -42,36 +42,6 @@
     });
 });		
 		
-	</script>
-	<script>
-	function addEvent(obj,xEvent,fn){
-	if(obj.attachEvent){
-	obj.attacheEvent('on'+xEvent,fn);
-	}else{
-	obj.addEventListener(xEvent,fn,false);
-	}
-	}
-	window.onload = function () {
-  //接着利用我们自己封装的函数给div绑定事件，
-  var oDiv = document.getElementById('body');
-  addEvent(oDiv,'mousewheel',onMouseWheel);
-  addEvent(oDiv,'DOMMouseScroll',onMouseWheel);
-  // 当滚轮事件发生时，执行onMouseWheel这个函数
-  function onMouseWheel(ev) {
-    var ev =ev||window.event;
-	var down=true;//定义一个标志
-	down=ev.wheelDelta?ev.wheelDelta<0:ev.detail>0;
-	if(down){
-	document.getElementById('nav1').style.display="none";
-	}else{
-	document.getElementById('nav1').style.display="block";
-	}
-	if(ev.preventDefault){
-	ev.preventDefault();
-	}
-	return false;
-  }
-}
 	</script>
 </head>
 <body id="body">
@@ -228,8 +198,9 @@
 </div>
 </div>
 </div>
-<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="jquery.pagepiling.js"></script>
 </body>
 </html>

@@ -11,9 +11,10 @@
 .r{
 	float:right;
 }
-.nav{
-	
+#nav1{
+	color:yellow;
 }
+
 .navbar{
 	background:rgba(255,255,255,1);
 }
