@@ -4,12 +4,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title>主页1</title>
-	<link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="mysite.css">
-	<!--<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
-	<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<title>林一峰的简历</title>
+	<link href="avatar.ico" rel="icon">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="mysite.css">	
 	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
     $('#pagepiling').pagepiling({
@@ -43,10 +43,40 @@
 });		
 		
 	</script>
+		<script>
+	function addEvent(obj,xEvent,fn){
+	if(obj.attachEvent){
+	obj.attacheEvent('on'+xEvent,fn);
+	}else{
+	obj.addEventListener(xEvent,fn,false);
+	}
+	}
+	window.onload = function () {
+  //接着利用我们自己封装的函数给div绑定事件，
+  var oDiv = document.getElementById('body');
+  addEvent(oDiv,'mousewheel',onMouseWheel);
+  addEvent(oDiv,'DOMMouseScroll',onMouseWheel);
+  // 当滚轮事件发生时，执行onMouseWheel这个函数
+  function onMouseWheel(ev) {
+    var ev =ev||window.event;
+	var down=true;//定义一个标志
+	down=ev.wheelDelta?ev.wheelDelta<0:ev.detail>0;
+	if(down){
+	document.getElementById('nav1').style.color="blue";
+	}else{
+	alert("xiang上");
+	}
+	if(ev.preventDefault){
+	ev.preventDefault();
+	}
+	return false;
+  }
+}
+	</script>
 </head>
-<body>
+<body id="body">
 	<!----nav开始------>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" id="nav1" role="navigation">
 	<div class="container-fluid"> 
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -60,20 +90,19 @@
 	</div>
 	<div class="collapse navbar-collapse" id="example-navbar-collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">主页</a></li>
-			<li><a href="#">blog</a></li>
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#">Blog</a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					about <b class="caret"></b>
+					About <b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="#">联系方式</a></li>
 					<li><a href="#">简历下载</a></li>
-					<li><a href="#">Jasper Report</a></li>
+					
 					<li class="divider"></li>
-					<li><a href="#">分离的链接</a></li>
-					<li class="divider"></li>
-					<li><a href="#">另一个分离的链接</a></li>
+					<li><a href="#">我的项目</a></li>
+					
 				</ul>
 			</li>
 		</ul>
@@ -83,9 +112,9 @@
 	<!----nav结束------>
 	<!-------------------------->
 <div id="pagepiling">
-    <div class="section">
+    <div class="section" id="home">
 	<!--模块1 开始-->
-	<div class="container m1" id="home">
+	<div class="container m1">
     <div class="row">
        <div class="col-md-6 col-md-offset-3 center">
 	   <h1 class="typing"><a href="javascript:">hello world!</a></h1>
@@ -136,12 +165,11 @@
 		<!--模块3 开始-->
 	<div class="container m2">
     <div class="row center" >
-        <div class=".col-sm-6 col-md-12 center" 
-            style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+        <div class=".col-sm-6 col-md-12 center">
             <h1>教育背景</h1>
 			<h4>西南交通大学 本科</h4>
 			<p>信息科学与技术学院 通信工程专业</p>
-			<h3>主修：面向对象高级程序设计、数据结构、计算机网络等</h3>
+			<h4>主修：面向对象高级程序设计、数据结构、计算机网络等</h4>
 			<p>2016年6月毕业</p>
 			<p>基于恒膜误差函数</p>
 		</div> 				
@@ -151,35 +179,37 @@
 	</div>
 <!---------------------------------->
     <div class="section">
+	
 	<!-----模块4 开始----->
 		<div class="container">
-
-   <div class="row center">
-	<h1>项目经验</h1>
-      <div class="col-sm-3 col-md-6 col-lg-8"  
+   <div class="row">
+	<h1 class="center">项目经验</h1>
+      <div class="col-sm-3 col-md-3 col-lg-6"  
          style=" box-shadow: inset 1px -1px 1, inset -1px 1px 1px #444;">
-         <p>Lorem ipsum dolor sit amet,
-         </p>
-
-         <p>Sed ut perspiciatis a
-         </p>
+         <h5>基于无线传感网的智能化农业管理系统
+         </h5>
+         <dd>结合zoobee传感器通过C#+mysql+sql server编写软件实现，对农田中的土壤湿度、pH值等进行就检测，及对农业灌溉进行管理。
+         </dd>
+		 <dd>实现了客户添加、客户修改、客户删除、批量删除客户等几大功能使用，并能够收集土壤ph、湿度等信息，控制土壤灌溉开启关闭。
+		 </dd>
       </div>
-
-      <div class="col-sm-9 col-md-6 col-lg-4" 
-         style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-         <p>11111
+      <div class="col-sm-9 col-md-3 col-lg-4">
+         <h5>后台管理系统</h5>
          </p>
-
          <p> 122
          </p>
-   </div>
+	  </div>
+	   <div class="col-sm-9 col-md-3 col-lg-4">
+	   <h5><a href="./index.html">个人简历</a></h5>
+         <dd>基于bootstrap搭建而成的静态页面</dd>
+         <dd>满足在不同视口下的浏览需求</dd>   
+	  </div>
 </div>
 </div>
 	<!-----模块3结束------>
-	<!---------------------->
-
 	</div>
-<div class="section">
+<!---------------------------------->	
+	<div class="section">
 	<div class="container">
 		<div class="row center">
 			<h1>了解更多</h1>
@@ -187,15 +217,19 @@
 				<h2>个人主页</h2>
 				<p>Email:<a href="mailto:waterservers@163.com" title="网易邮箱">waterservers@163.com</a><p>
 				<p>Github</p>
-				<h4>csdn</h4>
+				<h2><a href="#">下载简历</a></h2>
 				<h4>知乎</h4>
 				<h4>微信二维码</h4>
+				
 			</div>
 		</div>
 	</div>
+	</div>
 </div>
-<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.pagepiling.js"></script>
 </body>
 </html>
