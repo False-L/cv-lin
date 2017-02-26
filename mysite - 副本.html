@@ -20,14 +20,14 @@
         anchors: [],
         scrollingSpeed: 800,
         easing: 'swing',
-        loopBottom: false,
+        loopBottom: true,
         loopTop: false,
         css3: true,
         navigation: {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['首页', '我的技能', '教育背景', 'section4','了解更多']
+            'tooltips': ['首页', '我的技能', '教育背景', '项目经验','了解更多']
         },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -46,7 +46,7 @@
 </head>
 <body>
 	<!----nav开始------>
-	<nav class="navbar navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container-fluid"> 
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -106,76 +106,71 @@
 	<!-------------------------->
 	<div class="section">
 	<div class="container" id="skills">
-	<div class=row>
-	<div class="col-md-12 center">
+	<div class="row center">
 	<h1>我的技能</h1>
-	</div>
+		<div class="tag-panel">
+		<div class="tag tag1">HTML(5)</div>
+		<div class="tag tag1">CSS3</div>
+		</div>
+		<div class="tag-panel">
+		<div class="tag tag1">JavaScript</div>
+		<div class="tag tag1">jQuery</div>
+		<div class="tag tag2">Bootstrap</div>
+		</div>
+		<div class="tag-panel">
+		<div class="tag tag1">C++</div>
+		<div class="tag tag1">C#</div>
+		<div class="tag tag2">PHP</div>
+		<div class="tag tag2">Node.js</div>
+		</div>
+		<div class="tag-panel">
+		<div class="tag tag1">Photoshop</div>
+		<div class="tag tag1">Dreamweaver</div>
+		<div class="tag tag2">Git</div>
+		</div>
 	</div>
 	</div>
 	</div>
 	<!-------------------------->
     <div class="section">
-		<!--模块2 开始-->
+		<!--模块3 开始-->
 	<div class="container m2">
-	<h1>教育经历</h1>
-    <div class="row" >
-        <div class="col-xs-6 col-md-6" 
-            style="background-color: #dedef8;
-            box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p>css scss JavaScript Bootstrap</p>
-        </div>
-        <div class="col-xs-3 col-md-6" 
-        style="background-color: #dedef8;box-shadow: 
-        inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-            <p><dl>
-				<dt>其他</dt>
-				<dd>dreamwave</dd>
-				<dt>111</dt>
-				<dd>111</dd>
-			</dl>
-            </p>
-            <p>
-            </p>
-        </div>
+    <div class="row center" >
+        <div class=".col-sm-6 col-md-12 center" 
+            style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+            <h1>教育背景</h1>
+			<h4>西南交通大学 本科</h4>
+			<p>信息科学与技术学院 通信工程专业</p>
+			<h3>主修：面向对象高级程序设计、数据结构、计算机网络等</h3>
+			<p>2016年6月毕业</p>
+			<p>基于恒膜误差函数</p>
+		</div> 				
     </div>
-</div>
-	<!------模块2 结束------->
-	<!------------------------->
 	</div>
+	<!------模块3 结束------->	
+	</div>
+<!---------------------------------->
     <div class="section">
-	<!-----模块3 开始----->
+	<!-----模块4 开始----->
 		<div class="container">
-   <h1>项目经验</h1>
-   <div class="row">
+
+   <div class="row center">
+	<h1>项目经验</h1>
       <div class="col-sm-3 col-md-6 col-lg-8"  
-         style="background-color: #dedef8; 
-         box-shadow: inset 1px -1px 1px #444, 
-         inset -1px 1px 1px #444;">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. 
+         style=" box-shadow: inset 1px -1px 1, inset -1px 1px 1px #444;">
+         <p>Lorem ipsum dolor sit amet,
          </p>
 
-         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
-            quae ab illo inventore veritatis et quasi architecto beatae vitae 
-            dicta sunt explicabo. 
+         <p>Sed ut perspiciatis a
          </p>
       </div>
 
       <div class="col-sm-9 col-md-6 col-lg-4" 
-         style="background-color: #dedef8;
-         box-shadow: inset 1px -1px 1px #444, 
-         inset -1px 1px 1px #444;">
-         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-            accusantium doloremque laudantium.
+         style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         <p>11111
          </p>
 
-         <p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-            consectetur, adipisci velit, sed quia non numquam eius modi 
-            tempora incidunt ut labore et dolore magnam aliquam quaerat 
-            voluptatem. 
+         <p> 122
          </p>
    </div>
 </div>
@@ -184,21 +179,19 @@
 	<!---------------------->
 
 	</div>
-    <div class="section">
-		<div class="container">
-	<div class="row">
-	<div class="main" style="background:rgba(255,255,255,1);">
-<!-----模块4开始------->
-<p>教育背景</p>
-<!-----模块4结束------->
-<!-----模块5开始------->
-<p>兴趣爱好</p>
-<!-----模块5结束------->
-<!-----模块5开始------->
-<p>了解更多</p>
-<!-----模块5结束------->
-	</div>
-	</div>
+<div class="section">
+	<div class="container">
+		<div class="row center">
+			<h1>了解更多</h1>
+			<div class="col-md-12 col-sm-12">
+				<h2>个人主页</h2>
+				<p>Email:<a href="mailto:waterservers@163.com" title="网易邮箱">waterservers@163.com</a><p>
+				<p>Github</p>
+				<h4>csdn</h4>
+				<h4>知乎</h4>
+				<h4>微信二维码</h4>
+			</div>
+		</div>
 	</div>
 </div>
 <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>

@@ -1,0 +1,151 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+/****************************************/
+/*模块1开始*/
+.center{
+	text-align:center;
+}
+.r{
+	float:right;
+}
+.nav{
+	
+}
+.navbar{
+	background:rgba(255,255,255,1);
+}
+ 
+.picture {
+width: 100px;
+height:100px;
+transform: rotate(45deg);
+overflow: hidden;
+margin:auto;
+border: 10px solid #aee2d9;
+}
+
+.picture > img {
+width: 100px;
+height:100px;
+max-width: 100%;
+transform: rotate(-45deg) scale(1.42);
+}
+.center > h1{
+	font-size:6em;
+	color:white;
+}
+
+#title{
+	font-size:5em;
+	color:white;
+	text-shadow:1px 2px #22c3aa,2px 4px #aee2d9;
+}
+.typing a {
+color: white;
+transition: 1s;
+text-decoration:none;
+}
+.typing a:hover {
+text-shadow: 0 0 .1em, 0 0 .3em;
+}
+.center > h4{
+font-family:"黑体",sans-serif;
+font-size:1.5em;
+color:#AEE2D9;
+}
+#home	> p{
+font-family:"黑体",sans-serif;
+font-size:1em;
+}
+#subtitle{
+	font-size:2em;
+	color:yellow;
+}
+#home p > a{
+	font-family:font-family:"宋体",sans-serif;
+	font-size:1.2em;
+	text-decoration:none;
+}
+#home p > a{
+	
+}
+/*模块1结束*/
+/**************************/
+/*模块2开始*/
+#skills  .row{
+	/*background:url('images/Vieste_ZH.jpg') fixed;*/
+}
+#skills .row .center{
+	border:.1em solid blue;
+}
+.row  h1{
+	font-size:5em;
+	color:white;
+	text-shadow:1px 2px #22c3aa,2px 4px #aee2d9;
+}
+.tag-panel {
+    margin: 15px auto;
+}
+.tag {
+	font-family: Lato,"Microsoft YaHei",sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+    background-color: #096254;
+    color: #aee2d9;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    opacity: 0.5;
+}
+.tag .tag1{
+	opacity:1;
+	filter:Alpha(opacity=100)
+}
+.tag .tag2{
+	opacity:0.50;
+	filter:Alpha(opacity=50)
+}
+/*模块2结束*/
+/**************************/
+/*模块3开始*/
+h4 {
+    font-size: 1.25em;
+    margin: 0 0 0.1em 0;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0.5em 0;
+}
+.section {
+    color: #eef3f0;
+}
+/*模块3结束*/
+/**************************/
+/*模块4开始*/
+
+/*模块4结束*/
+/**************************/
+/*模块5开始*/
+/*模块5结束*/
+/**************************/		
+@media (min-width: 768px) {
+	.navbar{
+		background:rgba(255,255,255,0.5);
+	}
+  .navbar-nav {
+  float:right;
+  margin-right:50px;
+			}
+	.m1{
+	background:rgba(34,195,172,0.85);
+	}
+}
+/********************/
+
