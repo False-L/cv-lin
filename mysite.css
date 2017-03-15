@@ -2,7 +2,60 @@
 	padding:0;
 	margin:0;
 }
+.center > h1{
+	font-size:5em;
+	color:white;
+}
+.row  h1{
+	font-size:5em;
+	color:white;
+	text-shadow:1px 2px #22c3aa,2px 4px #aee2d9;
+}
+/***********************/
+/***nav***/
+.navbar-fixed-top{
+	border-width:0;
+}
+.navbar-header .navbar-brand{
+color:white;
+font-size:1.2em;
+}
+.navbar-header .navbar-brand:hover{
+color:white;
+font-size:1.4em;
+}
+#nav{
+	background:rgba(34,34,34,0.9);
+	color:white;
+}
+#example-navbar-collapse ul li a{
+color:white;
+font-size:1.2em;
+}
+#example-navbar-collapse ul li a:hover{
+	background:rgba(255,255,255,0.8);
+	color:black;
+	font-size:1.2em;	
+}
+#example-navbar-collapse .navbar-nav .open a{
+	color:black;
+	font-size:1.2em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul li a{
+	color:black;
+	font-size:1em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul li a:hover{
+	background:#DDD;
+	color:black;
+	font-size:1em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul {
+ margin:0;
+ padding:0;
+}
 
+/****************/
 /****************************************/
 /*模块1开始*/
 .center{
@@ -11,14 +64,6 @@
 .r{
 	float:right;
 }
-#nav1{
-	color:yellow;
-}
-
-.navbar{
-	background:rgba(255,255,255,1);
-}
- 
 .picture {
 width: 100px;
 height:100px;
@@ -34,10 +79,7 @@ height:100px;
 max-width: 100%;
 transform: rotate(-45deg) scale(1.42);
 }
-.center > h1{
-	font-size:6em;
-	color:white;
-}
+
 
 #title{
 	font-size:5em;
@@ -57,7 +99,7 @@ font-family:"黑体",sans-serif;
 font-size:1.5em;
 color:#AEE2D9;
 }
-#home	> p{
+#home > p{
 font-family:"黑体",sans-serif;
 font-size:1em;
 }
@@ -66,12 +108,25 @@ font-size:1em;
 	color:yellow;
 }
 #home p > a{
-	font-family:font-family:"宋体",sans-serif;
-	font-size:1.2em;
+	font-family:"黑体",sans-serif;
+	font-size:1.3em;
 	text-decoration:none;
+	color:#AEE2D9;
 }
-#home p > a{
-	
+#home p > a:hover{
+	color:white;
+	text-shadow:0 0 .03em;
+}
+h6  > a{
+	font-family:"黑体",sans-serif;
+	font-size:1em;
+	text-decoration:none;
+	color:white;
+}
+h6  > a:hover{
+	font-size:1em;
+	text-decoration:none;
+	color:yellow;
 }
 /*模块1结束*/
 /**************************/
@@ -81,11 +136,6 @@ font-size:1em;
 }
 #skills .row .center{
 	border:.1em solid blue;
-}
-.row  h1{
-	font-size:5em;
-	color:white;
-	text-shadow:1px 2px #22c3aa,2px 4px #aee2d9;
 }
 .tag-panel {
     margin: 15px auto;
@@ -119,7 +169,6 @@ h4 {
     margin: 0 0 0.1em 0;
     margin-top: 0;
 }
-
 p {
     font-size: 1.1em;
     margin: 0.5em 0;
@@ -136,10 +185,7 @@ p {
 /*模块5开始*/
 /*模块5结束*/
 /**************************/		
-@media (min-width: 768px) {
-	.navbar{
-		background:rgba(255,255,255,1);
-	}
+@media (min-width: 768px) {	
   .navbar-nav {
   float:right;
   margin-right:50px;
@@ -149,10 +195,45 @@ p {
 	}
 }
 @media (max-width: 400px) {
+.navbar-header .navbar-brand{
+color:#333;
+font-size:1.2em;
+}
+.navbar-header .navbar-brand:hover{
+color:#333;
+font-size:1.2em;
+text-shadow:0 0 .1em;
+}		
+#nav{
+	background:white;
+}
+#example-navbar-collapse ul li a{
+color:black;
+font-size:1.2em;
+}
+#example-navbar-collapse ul li a:hover{
+	background:#DDD;
+	color:black;
+	font-size:1.2em;	
+}
+#example-navbar-collapse .navbar-nav .open a{
+	color:black;
+	font-size:1.2em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul li a{
+	color:black;
+	font-size:1em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul li a:hover{
+	background:#DDD;
+	color:black;
+	font-size:1em;
+}
+#example-navbar-collapse .navbar-nav .dropdown ul {
+ margin:0;
+ padding:0;
+}
 	.row .typing{
-		display:none;
-	}
-	#pp-nav{
 		display:none;
 	}
 }
